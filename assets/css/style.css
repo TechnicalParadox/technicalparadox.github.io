@@ -1,0 +1,74 @@
+:root {
+  --darker: #21252b;
+  --dark: #282c34;
+  --accent: #3e5b93;
+  --light: #e2c08d;
+  --lighter: #d4d6dd;
+}
+
+* {
+  margin: 0;
+}
+
+header {
+  padding: 10px 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--darker);
+  box-shadow: 2px 2px 10px black;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--lighter);
+}
+
+header a:hover {
+  color: var(--light);
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+}
+
+/* Styling when hovering over item in navigation menu */
+header nav ul li a:hover {
+  background: var(--accent);
+  color: var(--lighter);
+  border-radius: 5px;
+  box-shadow: 1px 2px 3px black;
+}
+
+body {
+  background-color: var(--dark);
+}
+
+/* MEDIA QUERY FOR TABLETS AND LARGER */
+@media screen and (min-width: 574px) {
+
+  /* Make header sticky on tablets and larger */
+  header {
+    position: sticky;
+    top: 0;
+  }
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND LARGER */
+@media screen and (min-width: 767px) {
+
+}
+
+/* MEDIA QUERY FOR FULL SIZE SCREENS AND LARGER */
+@media screen and (min-width: 979px) {
+
+}
