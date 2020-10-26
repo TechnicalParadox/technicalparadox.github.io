@@ -12,6 +12,10 @@
   margin: 0;
 }
 
+h1, h2, h3, h4 {
+  text-shadow: 2px 2px 1px var(--shadow);
+}
+
 header {
   padding: 10px 3%;
   display: flex;
@@ -41,6 +45,7 @@ header nav ul {
 
 header nav ul li a {
   padding: 10px 15px;
+  text-shadow: 2px 2px 1px var(--shadow);
 }
 
 /* Styling when hovering over item in navigation menu */
@@ -54,6 +59,14 @@ header nav ul li a:hover {
 body {
   background-color: var(--dark);
 }
+
+hr {
+  background-color: var(--darker);
+  border: none;
+  height: 3px;
+}
+
+/* Hero Styling */
 
 .hero {
   background-image: url("../images/hero-bg.jpg");
@@ -73,9 +86,10 @@ body {
 }
 
 .profile img {
-  border: 2px solid var(--shadow);
+  border: 2px solid var(--darker);
   box-shadow: 1px 1px 5px var(--shadow);
   border-radius: 5px;
+  margin-bottom: -30px;
 }
 
 .about {
@@ -84,18 +98,123 @@ body {
   padding: 20px;
   color: var(--lighter);
   box-shadow: 1px 1px 5px var(--shadow);
-  border: 2px solid var(--shadow);
+  border: 2px solid var(--darker);
   border-radius: 5px;
 }
 
 .about h2 {
   text-align: center;
-  text-shadow: 1px 2px 1px var(--shadow);
 }
 
 .about p {
   padding-top: 5px;
 }
+
+/* End Hero Styling */
+
+/* Portfolio Styling */
+
+.portfolio {
+  display: flex;
+  margin: 10px;
+  color: var(--lighter);
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.portfolio h2 {
+  text-align: center;
+  color: var(--light);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.portfolio hr {
+  background-color: var(--light);
+  margin-top: 10px;
+}
+
+.portfolio-grid {
+  background-color: var(--dark);
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+  justify-content: center;
+}
+
+.grid-item {
+  background-color: var(--darker);
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 2px 2px 2px var(--shadow);
+}
+
+/* End Portfolio Styling */
+
+/* Contact Info Styling */
+
+footer {
+  background-color: var(--darker);
+  width: 100%;
+  color: var(--lighter);
+  padding: 10px;
+}
+
+.contact h2 {
+  text-align: center;
+  padding: 5px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+}
+
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--lighter);
+  background-color: var(--darker);
+}
+
+.contact-info h3 {
+  padding-bottom: 5px;
+  color: var(--light);
+}
+
+.contact-info div {
+  text-align: center;
+  flex: 1;
+}
+
+.contact-info div a {
+  text-decoration: none;
+  color: var(--lighter);
+}
+
+.contact-info div a:hover {
+  color: var(--light);
+}
+
+.phone-info::before {
+  content: "📞 ";
+}
+
+.email-info::before {
+  content: "✉️ ";
+}
+
+.github-info::before {
+  content: "👨‍💻 ";
+}
+
+.linkedin-info::before {
+  content: "💼 ";
+}
+
+.personal, .social {
+  padding: 5px;
+}
+/* End Contact Info Styling */
 
 /* MEDIA QUERY FOR TABLETS AND LARGER */
 @media screen and (min-width: 574px) {
@@ -109,6 +228,10 @@ body {
   .hero {
     justify-content: space-between;
   }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND LARGER */
@@ -116,6 +239,10 @@ body {
   .about {
     margin-top: 5%;
     margin-bottom: 5%;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -130,5 +257,12 @@ body {
   .hero div {
     margin-left: 10%;
     margin-right: 10%;
+  }
+}
+
+/* MEDIA QUERY FOR LARGE SCREENS AND LARGER */
+@media screen and (min-width: 1400px) {
+  .hero div {
+    flex: 2;
   }
 }
