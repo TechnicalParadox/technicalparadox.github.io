@@ -147,6 +147,7 @@ hr {
 .portfolio-grid a:hover div h2 {
   color: var(--accent);
   background-color: var(--lighter);
+  text-shadow: none;
 }
 
 .grid-item {
@@ -169,6 +170,9 @@ hr {
   background-image: url("../images/project1.png");
   background-size: cover;
   background-position: center;
+  margin: -40px;
+  height: 330px;
+  width: auto;
 }
 
 .project2 {
