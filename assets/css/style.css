@@ -89,7 +89,12 @@ body {
 }
 
 .about h2 {
-  padding-bottom: 5px;
+  text-align: center;
+  text-shadow: 1px 2px 1px var(--shadow);
+}
+
+.about p {
+  padding-top: 5px;
 }
 
 /* MEDIA QUERY FOR TABLETS AND LARGER */
