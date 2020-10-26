@@ -13,7 +13,7 @@
 }
 
 h1, h2, h3, h4 {
-  text-shadow: 2px 2px 1px var(--shadow);
+  text-shadow: 1px 2px 2px var(--shadow);
 }
 
 header {
@@ -130,11 +130,6 @@ hr {
   border-radius: 5px;
 }
 
-.portfolio hr {
-  background-color: var(--light);
-  margin-top: 10px;
-}
-
 .portfolio-grid {
   background-color: var(--dark);
   display: grid;
@@ -143,11 +138,67 @@ hr {
   justify-content: center;
 }
 
+.portfolio-grid a {
+  margin: 40px;
+  text-decoration: none;
+  color: var(--lighter)
+}
+
+.portfolio-grid a:hover div h2 {
+  color: var(--accent);
+  background-color: var(--lighter);
+}
+
 .grid-item {
-  background-color: var(--darker);
-  margin: 5px;
-  padding: 5px;
-  box-shadow: 2px 2px 2px var(--shadow);
+  box-shadow: 2px 2px 3px var(--shadow);
+  height: 250px;
+  border: 3px solid var(--darker);
+  display: flex;
+}
+
+.grid-item h2 {
+  color: var(--lighter);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: auto;
+  border-radius: 0px;
+  align-self: flex-end;
+}
+
+.project1 {
+  background-image: url("../images/project1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.project2 {
+  background-image: url("../images/project2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.project3 {
+  background-image: url("../images/project3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.project4 {
+  background-image: url("../images/project1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.project5 {
+  background-image: url("../images/project2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.project6 {
+  background-image: url("../images/project3.png");
+  background-size: cover;
+  background-position: center;
 }
 
 /* End Portfolio Styling */
