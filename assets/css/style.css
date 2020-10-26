@@ -1,3 +1,4 @@
+/* Variables */
 :root {
   --darker: #21252b;
   --dark: #282c34;
@@ -8,6 +9,7 @@
   --shadow: black;
 }
 
+/* General Styling */
 * {
   margin: 0;
 }
