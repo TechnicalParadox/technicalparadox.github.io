@@ -61,7 +61,7 @@ body {
   background-position: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .hero div {
@@ -79,7 +79,7 @@ body {
 }
 
 .about {
-  flex: 1;
+  flex: 50%;
   background-color: var(--accent-rgba-t);
   padding: 20px;
   color: var(--lighter);
@@ -100,14 +100,30 @@ body {
     position: sticky;
     top: 0;
   }
+
+  .hero {
+    justify-content: space-between;
+  }
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND LARGER */
 @media screen and (min-width: 767px) {
-
+  .about {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
 }
 
 /* MEDIA QUERY FOR FULL SIZE SCREENS AND LARGER */
 @media screen and (min-width: 979px) {
+  .about {
+    flex: .8;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
 
+  .hero div {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
