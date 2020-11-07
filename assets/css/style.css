@@ -172,9 +172,6 @@ hr {
   background-image: url("../images/project1.png");
   background-size: cover;
   background-position: center;
-  margin: -40px;
-  height: 330px;
-  width: auto;
 }
 
 .project2 {
@@ -205,6 +202,10 @@ hr {
   background-image: url("../images/project3.png");
   background-size: cover;
   background-position: center;
+}
+
+.featured {
+  height: 400px;
 }
 
 /* End Portfolio Styling */
