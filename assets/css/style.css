@@ -9,3 +9,8 @@
    background-size:cover;
    background-attachment: fixed;
 }
+
+.resume
+{
+  display: none;
+}
