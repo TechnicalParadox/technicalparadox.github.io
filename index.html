@@ -12,7 +12,11 @@
 
 <body>
   <!-- Hero! - .is-dark background, .is-bold for gradient, .is-fullheight of viewport -->
-  <section class="hero is-dark is-bold is-fullheight">
+  <section class="hero is-dark is-bold is-fullheight has-background">
+    <!-- Hero Image -->
+    <img alt="Giamo's Lao's desktop PC setup using Atom.io" class="hero-background is-transparent"
+      src="assets/images/hero-bg.jpg"/>
+
     <!-- Hero Header -->
     <div class="hero-head">
       I'm the header
@@ -37,10 +41,10 @@
           </div>
         </div>
         <div class="is-flex notification is-danger is-justify-content-flex-end">
-          This div justifies content to flex end!
+          <p class="pr-1">a: This div justifies content to flex end!</p>
           <div class="is-flex-direction-column">
-            This div has a flex direction of column
-            <p>All content in this div is aligned to flex-end</p>
+            <p>b: This div has a flex direction of column</p>
+            <p>b: All content in this div is aligned to flex-end</p>
             <p>
               I am just underneath the tiles
             </p>
