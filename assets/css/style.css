@@ -1,15 +1,3 @@
-.hero
-{
-  background-image: url("../images/hero-bg.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 500px;
-  background-repeat: no-repeat;
-   background-position: center;
-   background-size:cover;
-   background-attachment: fixed;
-}
-
 .resume
 {
   display: none;
