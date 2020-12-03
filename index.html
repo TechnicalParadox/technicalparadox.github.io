@@ -20,7 +20,33 @@
 
     <!-- Hero Body -->
     <div class="hero-body">
-      I'm the body
+      <div class="container">
+        <div class="tile is-ancestor">
+          <div class="tile is-parent"> <!-- Fills left side of hero -->
+            <div class="tile is-child notification is-primary is-4">
+              Picture here
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical is-4"> <!-- 4 columns to right of hero -->
+            <div class="tile is-child notification is-warning">
+              I am the first tile
+            </div>
+            <div class="tile is-child notification is-info">
+              I am the second tile
+            </div>
+          </div>
+        </div>
+        <div class="is-flex notification is-danger is-justify-content-flex-end">
+          This div justifies content to flex end!
+          <div class="is-flex-direction-column">
+            This div has a flex direction of column
+            <p>All content in this div is aligned to flex-end</p>
+            <p>
+              I am just underneath the tiles
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Hero Footer -->
