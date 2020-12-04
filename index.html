@@ -11,16 +11,28 @@
 </head>
 
 <body>
-  <!-- Navbar -->
+  <!-- Navbar --> <!-- TODO: Give links some color, at the least when highlighted -->
   <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://technicalparadox.github.io">Giamo Lao</a>
+      <a class="navbar-item" href="./index.html">Giamo Lao</a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <!-- TODO: theme hamburger menu to match desktop version -->
+    <div class="navbar-menu has-background-dark">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#portfolio">Portfolio</a>
+        <a class="navbar-item" href="#contact">Contact</a>
+      </div>
     </div>
   </nav>
   <!-- End Navbar -->
 
   <!-- Hero! - .is-dark background, .is-bold for gradient, .is-fullheight of viewport -->
-  <section class="hero is-dark is-bold is-fullheight-with-navbar has-background">
+  <section id="hero" class="hero is-dark is-bold is-fullheight-with-navbar has-background">
     <!-- Hero Image -->
     <img alt="Giamo's Lao's desktop PC setup using Atom.io" class="hero-background is-transparent"
       src="assets/images/hero-bg.jpg"/>
@@ -68,6 +80,18 @@
   </section>
   <!-- End Hero -->
 
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="has-background-dark has-text-white">
+    <p>test</p>
+  </section>
+  <!-- End Portfolio Section -->
+
+  <!-- Contact Section -->
+  <section id="contact" class="has-background-dark has-text-white">
+    <p>test</p>
+  </section>
+  <!-- End Contact Section -->
+
   <!-- Modal: Resume that will animate and pop up when requested by user -->
   <div class="resume modal">
     <!-- TODO: ISSUE #5 - animate resume onto screen -->
@@ -76,6 +100,8 @@
   <!-- JS Library CDNs -->
   <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
