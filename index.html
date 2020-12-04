@@ -16,7 +16,7 @@
     <!-- Always displayed to left of navbar on all devices -->
     <div class="navbar-brand">
       <a class="navbar-item" href="./index.html">
-        <img src="./assets/images/tech-avi.png"/>
+        <img src="./assets/images/tech-avi.png" alt="Giamo's avatar"/>
         &nbsp Giamo Lao
       </a>
       <!-- Hamburger menu for mobile -->
@@ -53,28 +53,33 @@
     <img alt="Giamo's Lao's desktop PC setup using Atom.io" class="hero-background is-transparent"
       src="assets/images/hero-bg.jpg"/>
 
-    <!-- Hero Header -->
+    <!-- Hero Header ->
     <div class="hero-head">
-    </div>
+      <div class="container is-hidden-desktop p-6">
+        <figure class="image is-1by1">
+          <img src="./assets/images/profile.jpg"/>
+        </figure>
+      </div>
+    </div>-->
 
     <!-- Hero Body -->
     <div class="hero-body">
-      <div class="container">
-        <div class="tile is-ancestor">
-          <div class="tile is-parent"> <!-- Fills left side of hero -->
-            <div class="tile is-child notification is-primary is-4">
-              Picture here
-            </div>
+      <div class="container p-6">
+        <div class="columns">
+          <div class="column is-flex is-justify-content-center">
+            <figure class="image">
+              <img src="./assets/images/profile.jpg"/>
+            </figure>
           </div>
-          <div class="tile is-parent is-vertical is-4"> <!-- 4 columns to right of hero -->
-            <div class="tile is-child notification is-warning">
-              I am the first tile
-            </div>
-            <div class="tile is-child notification is-info">
-              I am the second tile
-            </div>
+
+          <div class="column">
+            <h2>About Me</h2>
+            <p>A web development student.</p>
           </div>
         </div>
+      </div>
+        <!--
+
         <div class="is-flex notification is-danger is-justify-content-flex-end">
           <p class="pr-1">a: This div justifies content to flex end!</p>
           <div class="is-flex-direction-column">
@@ -84,6 +89,9 @@
               I am just underneath the tiles
             </p>
           </div>
+        -->
+
+
         </div>
       </div>
     </div>
