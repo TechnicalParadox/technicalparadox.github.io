@@ -1,3 +1,5 @@
+/* Start Hero Image Styling
+ * Credit to https://codepen.io/leonidboykov/pen/Edvvpm for tutorial*/
 .hero.has-background {
   position: relative;
   overflow: hidden;
@@ -13,6 +15,7 @@
 .hero-background.is-transparent {
   opacity: 0.3;
 }
+/* End Hero Image Styling */
 
 .resume
 {
