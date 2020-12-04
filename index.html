@@ -13,8 +13,10 @@
 <body class="has-background-dark has-text-white">
   <!-- Navbar --> <!-- TODO: Give links some color, at the least when highlighted -->
   <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <!-- Always displayed to left of navbar on all devices -->
     <div class="navbar-brand">
       <a class="navbar-item" href="./index.html">Giamo Lao</a>
+      <!-- Hamburger menu for mobile -->
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -22,7 +24,12 @@
       </a>
     </div>
     <!-- TODO: theme hamburger menu to match desktop version -->
+    <!-- Navbar menu, always displayed on desktop, displayed on click of hamburger for touch -->
     <div class="navbar-menu">
+      <!-- Left side (top on touch), next to brand -->
+      <div class="navbar-start">
+      </div>
+      <!-- Right side (bottom on touch) -->
       <div class="navbar-end">
         <a class="navbar-item" href="#portfolio">Portfolio</a>
         <a class="navbar-item" href="#contact">Contact</a>

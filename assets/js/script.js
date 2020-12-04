@@ -1,8 +1,8 @@
 // To execute once the DOM is ready to be manipulated by JS
 $(document).ready(function()
 {
-  // Check for click events on the navbar burger icon
-  $(".navbar-burger").click(function()
+  // Handle Navbar Burger open/close
+  $(".navbar-burger").click(function() // Check for click on navbar burger
   {
     // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
     $(".navbar-burger").toggleClass("is-active");
