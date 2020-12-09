@@ -12,7 +12,7 @@
 
 <body class="has-background-dark has-text-white">
   <!-- Navbar --> <!-- TODO: Give links some color, at the least when highlighted -->
-  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <nav id="navbar" class="navbar is-dark" role="navigation" aria-label="main navigation">
     <!-- Always displayed to left of navbar on all devices -->
     <div class="navbar-brand">
       <!-- My Avatar and Name -->
@@ -44,15 +44,15 @@
           </span>
         </a>
         <!-- Link to portfolio and contact info -->
-        <a class="navbar-item has-text-white" href="#portfolio">Portfolio</a>
-        <a class="navbar-item has-text-white" href="#contact">Contact</a>
+        <a class="navbar-item has-text-white" href="#section_portfolio">Portfolio</a>
+        <a class="navbar-item has-text-white" href="#section_contact">Contact</a>
       </div>
     </div>
   </nav>
   <!-- End Navbar -->
 
   <!-- Hero! - .is-dark background, .is-bold for gradient, .is-fullheight of viewport -->
-  <section id="hero" class="hero is-dark is-bold is-fullheight-with-navbar has-background">
+  <section id="section_hero" class="hero is-dark is-bold is-fullheight-with-navbar has-background">
     <!-- Hero Image -->
     <img alt="Giamo's Lao's desktop PC setup running Atom.io" class="hero-background is-transparent"
       src="assets/images/hero-bg.jpg"/>
@@ -87,7 +87,7 @@
               professional field.
             </p>
             <div class="is-flex-mobile mt-3 is-justify-content-center">
-              <button class="button is-link">Reach Out</button>
+              <button id="btn_reach_out" class="button is-link">Reach Out</button>
               <!-- TODO: modal for direct links to call/email/message on linkedin -->
             </div>
           </div>
@@ -107,7 +107,7 @@
   <!-- End Hero -->
 
   <!-- Portfolio Section -->
-  <section id="portfolio">
+  <section id="section_portfolio">
     <!-- TODO: Cards with image of project, short description, technology showcase, ISSUE #6 -->
     <p>test</p>
   </section>
@@ -116,7 +116,7 @@
   <!-- TODO: Humble beginnings ISSUE #1 -->
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="section_contact">
     <!-- TODO: LinkedIn, phone, email ISSUE #7 -->
     <p>test</p>
   </section>
