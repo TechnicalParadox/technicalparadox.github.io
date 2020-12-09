@@ -15,6 +15,7 @@
   <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
     <!-- Always displayed to left of navbar on all devices -->
     <div class="navbar-brand">
+      <!-- My Avatar and Name -->
       <a class="navbar-item" href="./index.html">
         <img src="./assets/images/tech-avi.png" alt="Giamo's avatar"/>
         &nbsp Giamo Lao
@@ -28,20 +29,24 @@
     </div>
     <!-- TODO: theme hamburger menu to match desktop version -->
     <!-- Navbar menu, always displayed on desktop, displayed on click of hamburger for touch -->
-    <div class="navbar-menu">
+    <div class="navbar-menu has-background-dark">
       <!-- Left side (top on touch), next to brand -->
       <div class="navbar-start">
       </div>
       <!-- Right side (bottom on touch) -->
       <div class="navbar-end">
-        <a class="navbar-item" href="https://github.com/technicalparadox">
+        <!-- Link to GitHub -->
+        <a class="navbar-item has-text-white" href="https://github.com/technicalparadox">
+          <!-- Shows "GitHub" on mobile -->
           <span class="is-hidden-desktop">GitHub</span>
+          <!-- Shows GitHub's icon on desktop -->
           <span class="icon is-hidden-touch">
             <i class="fab fa-lg fa-github"></i>
           </span>
         </a>
-        <a class="navbar-item" href="#portfolio">Portfolio</a>
-        <a class="navbar-item" href="#contact">Contact</a>
+        <!-- Link to portfolio and contact info -->
+        <a class="navbar-item has-text-white" href="#portfolio">Portfolio</a>
+        <a class="navbar-item has-text-white" href="#contact">Contact</a>
       </div>
     </div>
   </nav>
