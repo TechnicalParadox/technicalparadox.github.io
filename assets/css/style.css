@@ -31,7 +31,7 @@ html
   display: none;
 }
 
-.has-shadow
+.has-shadow, .card
 {
   box-shadow: 3px 3px 10px black;
 }
@@ -80,6 +80,11 @@ html
 {
   animation: fade-slide-up 1s 1s ease-out forwards;
   opacity: 0;
+}
+
+.atomized
+{
+  color: #e26f73 !important;
 }
 
 /* Scroll Cue End */
