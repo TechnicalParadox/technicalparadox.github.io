@@ -79,7 +79,7 @@
 
           <!-- About Me -->
           <div class="column">
-            <h1 class="title is-3 has-text-centered-touch">About Me</h1>
+            <h1 class="title is-3 has-text-centered-touch atomized">About Me</h1>
             <h2 class="subtitle is-5 mb-3 has-text-centered-touch">Professional, reliable, resourceful.</h2>
             <p class="is-size-5 has-text-centered-touch">
               A web development student in Penn LPS Coding Boot Camp. I am
@@ -102,16 +102,111 @@
 
     <!-- Scroll Cue (tutorial https://cssanimation.rocks/scroll-cue/)-->
     <section class="header-down-arrow">
-      <img src="assets/images/downarrow.png" width="50">
+      <a href="#section_portfolio">
+        <img src="assets/images/downarrow.png" width="50">
+      </a>
     </section>
   </section>
   <!-- End Hero -->
 
   <!-- Portfolio Section -->
-  <section id="section_portfolio" class="p-5">
+  <section id="section_portfolio" class="hero is-dark is-fullheight is-bold">
     <!-- TODO: Cards with image of project, short description, technology showcase, ISSUE #6 -->
-    <div class="container">
-      <h1 class="title is-1 has-text-link has-text-centered">Portfolio</h1>
+    <div class="hero-head">
+      <div class="container pt-3">
+        <h1 class="title is-1 has-text-link has-text-centered">Portfolio</h1>
+        <h2 class="subtitle is-3 has-text-centered">A few of my favorites</h2>
+      </div>
+    </div>
+
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./assets/images/project1.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <a target="_blank" href="https://technicalparadox.github.io/cbc-group2-project1">
+                      <p class="title is-4 has-text-info">Solar Time Tracker</p>
+                      <p class="subtitle is-6 has-text-info">by Giamo Lao & Gint Stirbys</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                  <a href="#">#css</a> <a href="#">#responsive</a>
+                  <br>
+                  Published <time datetime="2020-12">Dec 2020</time>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./assets/images/bbmod.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4 has-text-info">Bouncing Blocks Mod</p>
+                    <p class="subtitle is-6 has-text-info">by Giamo Lao & Przemek Jagielski</p>
+                  </div>
+                </div>
+
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                  <a href="#">#css</a> <a href="#">#responsive</a>
+                  <br>
+                  Published <time datetime="2013-8">Aug 2013</time>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./assets/images/tictactoe.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4 has-text-info">Tic-Tac-Toe</p>
+                    <p class="subtitle is-6 has-text-info">by Giamo Lao</p>
+                  </div>
+                </div>
+
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                  <a href="#">#css</a> <a href="#">#responsive</a>
+                  <br>
+                  Published <time datetime="2015-8">Aug 2015</time>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-footer">
+      <div class="content">
+        <a id="btn_contact" href="#section_contact" class="button is-link">Contact</a>
+      </div>
     </div>
   </section>
   <!-- End Portfolio Section -->
@@ -119,9 +214,12 @@
   <!-- TODO: Humble beginnings ISSUE #1 -->
 
   <!-- Contact Section -->
-  <section id="section_contact">
-    <!-- TODO: LinkedIn, phone, email ISSUE #7 -->
-    <p>test</p>
+  <section id="section_contact" class="footer has-background-dark">
+    <div class="container">
+      <!-- TODO: LinkedIn, phone, email ISSUE #7 -->
+      <!-- Left: email, Center: phone, Right: linkedIn -->
+      Email Phone LinkedIN
+    </div>
   </section>
   <!-- End Contact Section -->
 
