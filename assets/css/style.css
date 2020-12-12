@@ -3,6 +3,11 @@ html
   scroll-behavior: smooth;
 }
 
+.footer a:hover
+{
+  color: white;
+}
+
 /* Start Hero Image Styling
  * Credit to https://codepen.io/leonidboykov/pen/Edvvpm for tutorial*/
 .hero.has-background
