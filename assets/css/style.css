@@ -1,326 +1,90 @@
-/* Variables */
-:root {
-  --darker: #21252b;
-  --dark: #282c34;
-  --accent: #3e5b93;
-  --accent-rgba-t: rgba(62, 91, 147, 0.8);
-  --light: #e2c08d;
-  --lighter: #d4d6dd;
-  --shadow: black;
+html
+{
+  scroll-behavior: smooth;
 }
 
-/* General Styling */
-* {
-  margin: 0;
+/* Start Hero Image Styling
+ * Credit to https://codepen.io/leonidboykov/pen/Edvvpm for tutorial*/
+.hero.has-background
+{
+  position: relative;
+  overflow: hidden;
 }
 
-h1, h2, h3, h4 {
-  text-shadow: 1px 2px 2px var(--shadow);
-}
-
-header {
-  padding: 10px 3%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: var(--darker);
-  box-shadow: 2px 2px 10px var(--shadow);
-  align-items: center;
-}
-
-header a {
-  text-decoration: none;
-  color: var(--lighter);
-}
-
-header a:hover {
-  color: var(--light);
-}
-
-header nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-
-header nav ul li a {
-  padding: 10px 15px;
-  text-shadow: 2px 2px 1px var(--shadow);
-}
-
-/* Styling when hovering over item in navigation menu */
-header nav ul li a:hover {
-  background: var(--accent);
-  color: var(--lighter);
-  border-radius: 5px;
-  box-shadow: 1px 2px 3px var(--shadow);
-}
-
-body {
-  background-color: var(--dark);
-}
-
-hr {
-  background-color: var(--darker);
-  border: none;
-  height: 3px;
-}
-
-/* Hero Styling */
-
-.hero {
-  background-image: url("../images/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.hero div {
-  margin: 30px;
-}
-
-.profile {
-  flex: 0;
-}
-
-.profile img {
-  border: 2px solid var(--darker);
-  box-shadow: 1px 1px 5px var(--shadow);
-  border-radius: 5px;
-  margin-bottom: -30px;
-}
-
-.about {
-  flex: 50%;
-  background-color: var(--accent-rgba-t);
-  padding: 20px;
-  color: var(--lighter);
-  box-shadow: 1px 1px 5px var(--shadow);
-  border: 2px solid var(--darker);
-  border-radius: 5px;
-}
-
-.about h2 {
-  text-align: center;
-}
-
-.about p {
-  padding-top: 5px;
-}
-
-/* End Hero Styling */
-
-/* Portfolio Styling */
-
-.portfolio {
-  display: flex;
-  margin: 10px;
-  color: var(--lighter);
+.hero-background
+{
+  position: absolute;
+  object-fit: cover;
+  object-position: center center;
   width: 100%;
-  justify-content: center;
-  flex-direction: column;
+  height: 100%;
 }
 
-.portfolio h2 {
+.hero-background.is-transparent
+{
+  opacity: 0.3;
+}
+/* End Hero Image Styling */
+
+.resume
+{
+  display: none;
+}
+
+.has-shadow, .card
+{
+  box-shadow: 3px 3px 10px black;
+}
+
+/* Scroll Cue Start */
+@keyframes fade-slide-up
+{
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pulse
+{
+  0% {
+    opacity: 1;
+    transform: none;
+  }
+  50% {
+    opacity: .8;
+    transform: scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.header-down-arrow
+{
+  animation: pulse 2s 3s ease-out infinite;
+  position: absolute;
+    bottom: 2vh;
+    left: 0;
+    right: 0;
   text-align: center;
-  color: var(--light);
-  padding: 5px;
-  border-radius: 5px;
+  z-index: 10;
 }
 
-.portfolio-grid {
-  background-color: var(--dark);
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 10px;
-  justify-content: center;
+.header-down-arrow img
+{
+  animation: fade-slide-up 1s 1s ease-out forwards;
+  opacity: 0;
 }
 
-.portfolio-grid a {
-  margin: 40px;
-  text-decoration: none;
-  color: var(--lighter)
+.atomized
+{
+  color: #e26f73 !important;
 }
 
-.portfolio-grid a:hover div h2 {
-  color: var(--accent);
-  background-color: var(--lighter);
-  text-shadow: none;
-}
-
-.grid-item {
-  box-shadow: 2px 2px 3px var(--shadow);
-  height: 250px;
-  border: 3px solid var(--darker);
-  display: flex;
-}
-
-.grid-item h2 {
-  color: var(--lighter);
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  height: auto;
-  border-radius: 0px;
-  align-self: flex-end;
-}
-
-.project1 {
-  background-image: url("../images/project1.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.project2 {
-  background-image: url("../images/project2.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.project3 {
-  background-image: url("../images/project3.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.project4 {
-  background-image: url("../images/project1.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.project5 {
-  background-image: url("../images/project2.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.project6 {
-  background-image: url("../images/project3.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.featured {
-  height: 400px;
-}
-
-/* End Portfolio Styling */
-
-/* Contact Info Styling */
-
-footer {
-  background-color: var(--darker);
-  width: 100%;
-  color: var(--lighter);
-  padding: 10px;
-}
-
-.contact h2 {
-  text-align: center;
-  padding: 5px;
-  padding-bottom: 0px;
-  border-radius: 5px;
-}
-
-
-.contact-info {
-  display: flex;
-  flex-wrap: wrap;
-  color: var(--lighter);
-  background-color: var(--darker);
-}
-
-.contact-info h3 {
-  padding-bottom: 5px;
-  color: var(--light);
-}
-
-.contact-info div {
-  text-align: center;
-  flex: 1;
-}
-
-.contact-info div a {
-  text-decoration: none;
-  color: var(--lighter);
-}
-
-.contact-info div a:hover {
-  color: var(--light);
-}
-
-.phone-info::before {
-  content: "📞 ";
-}
-
-.email-info::before {
-  content: "✉️ ";
-}
-
-.github-info::before {
-  content: "👨‍💻 ";
-}
-
-.linkedin-info::before {
-  content: "💼 ";
-}
-
-.personal, .social {
-  padding: 5px;
-}
-/* End Contact Info Styling */
-
-/* MEDIA QUERY FOR TABLETS AND LARGER */
-@media screen and (min-width: 574px) {
-
-  /* Make header sticky on tablets and larger */
-  header {
-    position: sticky;
-    top: 0;
-  }
-
-  .hero {
-    justify-content: space-between;
-  }
-
-  .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND LARGER */
-@media screen and (min-width: 767px) {
-  .about {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  .portfolio-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* MEDIA QUERY FOR FULL SIZE SCREENS AND LARGER */
-@media screen and (min-width: 979px) {
-  .about {
-    flex: .8;
-    margin-top: 20%;
-    margin-bottom: 20%;
-  }
-
-  .hero div {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-/* MEDIA QUERY FOR LARGE SCREENS AND LARGER */
-@media screen and (min-width: 1400px) {
-  .hero div {
-    flex: 2;
-  }
-}
+/* Scroll Cue End */
