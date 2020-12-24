@@ -8,4 +8,10 @@ $(document).ready(function()
     $(".navbar-burger").toggleClass("is-active");
     $(".navbar-menu").toggleClass("is-active");
   });
+
+  $("#btn_reach_out").click(function()
+  {
+      location.hash = "#section_contact";
+      // TODO: Popup contact info modal
+  });
 });
